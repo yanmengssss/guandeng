@@ -1,0 +1,168 @@
+{
+  "source": "G:\\guandeng\\docs\\media_events.csv",
+  "definitions": {
+    "failure": "play_status 去除首尾空白后严格等于 0；空值不视为失败",
+    "failure_rate": "失败数 / (成功数 + 失败数)，0~1；分母为0时为null",
+    "config_age_minutes": "按时间戳时区计算 event_time - config_synced_at，单位分钟；负值保留并报告",
+    "duplicates": "保留原始事件记录，不自动去重；重复ID数量另行报告"
+  },
+  "total_events": 1347,
+  "failed_events": 111,
+  "successful_events": 1186,
+  "unknown_events": 50,
+  "invalid_status_events": 0,
+  "duplicate_event_id_count": 64,
+  "failure_rate": 0.08558211256746338,
+  "estimated_failure_loss_minutes": 9990,
+  "failed_event_metrics": {
+    "cache_remain_mb": {
+      "valid_count": 111,
+      "missing_or_invalid_count": 0,
+      "min": 0,
+      "max": 30,
+      "mean": 12.198198198198199,
+      "median": 12
+    },
+    "concurrent_tasks": {
+      "valid_count": 111,
+      "missing_or_invalid_count": 0,
+      "min": 21,
+      "max": 93,
+      "mean": 55.31531531531532,
+      "median": 54
+    },
+    "config_age_minutes": {
+      "valid_count": 111,
+      "missing_or_invalid_count": 0,
+      "min": 0,
+      "max": 65,
+      "mean": 31.45945945945946,
+      "median": 30
+    },
+    "negative_config_age_count": 0
+  },
+  "by_store_channel": [
+    {
+      "value": "西南标准店",
+      "total": 333,
+      "failed": 29,
+      "success": 290,
+      "unknown": 14,
+      "invalid_status": 0,
+      "failure_rate": 0.09090909090909091,
+      "share_of_all_failures": 0.26126126126126126
+    },
+    {
+      "value": "华北社区店",
+      "total": 326,
+      "failed": 28,
+      "success": 282,
+      "unknown": 16,
+      "invalid_status": 0,
+      "failure_rate": 0.09032258064516129,
+      "share_of_all_failures": 0.25225225225225223
+    },
+    {
+      "value": "华东商场店",
+      "total": 347,
+      "failed": 28,
+      "success": 312,
+      "unknown": 7,
+      "invalid_status": 0,
+      "failure_rate": 0.08235294117647059,
+      "share_of_all_failures": 0.25225225225225223
+    },
+    {
+      "value": "华南旗舰店",
+      "total": 341,
+      "failed": 26,
+      "success": 302,
+      "unknown": 13,
+      "invalid_status": 0,
+      "failure_rate": 0.07926829268292683,
+      "share_of_all_failures": 0.23423423423423423
+    }
+  ],
+  "by_media_category": [
+    {
+      "value": "日常背景音乐",
+      "total": 177,
+      "failed": 18,
+      "success": 153,
+      "unknown": 6,
+      "invalid_status": 0,
+      "failure_rate": 0.10526315789473684,
+      "share_of_all_failures": 0.16216216216216217
+    },
+    {
+      "value": "闭店迎宾提示",
+      "total": 175,
+      "failed": 16,
+      "success": 150,
+      "unknown": 9,
+      "invalid_status": 0,
+      "failure_rate": 0.0963855421686747,
+      "share_of_all_failures": 0.14414414414414414
+    },
+    {
+      "value": "会员日提醒",
+      "total": 161,
+      "failed": 16,
+      "success": 140,
+      "unknown": 5,
+      "invalid_status": 0,
+      "failure_rate": 0.10256410256410256,
+      "share_of_all_failures": 0.14414414414414414
+    },
+    {
+      "value": "整点报时音",
+      "total": 153,
+      "failed": 15,
+      "success": 133,
+      "unknown": 5,
+      "invalid_status": 0,
+      "failure_rate": 0.10135135135135136,
+      "share_of_all_failures": 0.13513513513513514
+    },
+    {
+      "value": "限时折扣播报",
+      "total": 157,
+      "failed": 14,
+      "success": 138,
+      "unknown": 5,
+      "invalid_status": 0,
+      "failure_rate": 0.09210526315789473,
+      "share_of_all_failures": 0.12612612612612611
+    },
+    {
+      "value": "品牌促销口播",
+      "total": 189,
+      "failed": 11,
+      "success": 169,
+      "unknown": 9,
+      "invalid_status": 0,
+      "failure_rate": 0.06111111111111111,
+      "share_of_all_failures": 0.0990990990990991
+    },
+    {
+      "value": "新品推广视频",
+      "total": 165,
+      "failed": 11,
+      "success": 151,
+      "unknown": 3,
+      "invalid_status": 0,
+      "failure_rate": 0.06790123456790123,
+      "share_of_all_failures": 0.0990990990990991
+    },
+    {
+      "value": "安全消防广播",
+      "total": 170,
+      "failed": 10,
+      "success": 152,
+      "unknown": 8,
+      "invalid_status": 0,
+      "failure_rate": 0.06172839506172839,
+      "share_of_all_failures": 0.09009009009009009
+    }
+  ]
+}
